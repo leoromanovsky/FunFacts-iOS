@@ -21,5 +21,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func showFunFact() {
+        println("You pressed the button!")
+    }
 }
 
