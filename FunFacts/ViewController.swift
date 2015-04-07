@@ -12,9 +12,12 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var funFactLab: UILabel!
     
+    let facts = ["Cool stuff", "More coolness", "This is the best"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        funFactLab.text = facts[0]
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,9 +26,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showFunFact() {
-        println("You pressed the button!")
-        
-        funFactLab.text = "lol"
+        funFactLab.text = facts[1]
     }
 }
 
