@@ -13,6 +13,7 @@
 		B38629351AD3A2B6004C8190 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B38629341AD3A2B6004C8190 /* Images.xcassets */; };
 		B38629381AD3A2B6004C8190 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B38629361AD3A2B6004C8190 /* LaunchScreen.xib */; };
 		B38629441AD3A2B6004C8190 /* FunFactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38629431AD3A2B6004C8190 /* FunFactsTests.swift */; };
+		B386294E1AD3B6FC004C8190 /* FactBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386294D1AD3B6FC004C8190 /* FactBook.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		B386293D1AD3A2B6004C8190 /* FunFactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunFactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38629421AD3A2B6004C8190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B38629431AD3A2B6004C8190 /* FunFactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFactsTests.swift; sourceTree = "<group>"; };
+		B386294D1AD3B6FC004C8190 /* FactBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactBook.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				B386292D1AD3A2B6004C8190 /* AppDelegate.swift */,
+				B386294D1AD3B6FC004C8190 /* FactBook.swift */,
 				B386292F1AD3A2B6004C8190 /* ViewController.swift */,
 				B38629311AD3A2B6004C8190 /* Main.storyboard */,
 				B38629341AD3A2B6004C8190 /* Images.xcassets */,
@@ -161,6 +164,7 @@
 				TargetAttributes = {
 					B38629271AD3A2B6004C8190 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 3X8WEA5QYK;
 					};
 					B386293C1AD3A2B6004C8190 = {
 						CreatedOnToolsVersion = 6.2;
@@ -212,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B386294E1AD3B6FC004C8190 /* FactBook.swift in Sources */,
 				B38629301AD3A2B6004C8190 /* ViewController.swift in Sources */,
 				B386292E1AD3A2B6004C8190 /* AppDelegate.swift in Sources */,
 			);
@@ -338,9 +343,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -348,9 +356,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
