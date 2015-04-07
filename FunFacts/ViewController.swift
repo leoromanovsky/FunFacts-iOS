@@ -12,12 +12,13 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var funFactLab: UILabel!
     
-    let facts = ["Cool stuff", "More coolness", "This is the best"]
+    let factBook = FactBook()
+    var factIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        funFactLab.text = facts[0]
+        funFactLab.text = factBook.facts[factIndex]
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,7 +27,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showFunFact() {
-        funFactLab.text = facts[1]
+        factIndex += 1
+        if (factIndex == factBook.facts.count) {
+            factIndex = 0
+        }
+        funFactLab.text = factBook.facts[factIndex]
     }
 }
-
